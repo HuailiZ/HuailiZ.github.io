@@ -1,15 +1,11 @@
 ---
 permalink: /
-title: "Huaili Zeng"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
-
-
-
-# About Me
 
 I am a Ph.D. candidate in Computer Science and Engineering (CSE) at Michigan State University, advised by Prof. [Tianxing Li](https://cse.msu.edu/~litianx2/). I hold an M.Sc. in Electrical and Computer Engineering (ECE) from the National University of Singapore (GPA **4.00/4.00**) and a B.E. with distinction from the University of Electronic Science and Technology of China (GPA **3.94/4.00**).
 
