@@ -9,9 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-Detailed Information
-======
-You can find my detailed CV here: [Huaili's Curriculum Vitae](../files/Huaili Zeng, PhD, MSU.pdf)
+You can also find my detailed CV here: [Huaili's Curriculum Vitae](../files/Huaili Zeng, PhD, MSU.pdf)
 
 Education
 ======
