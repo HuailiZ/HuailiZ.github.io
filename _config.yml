@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Huaili Zeng / Personal Website"
+title                    : "Personal Website"
 title_separator          : "-"
 name                     : &name "Huaili Zeng"
 description              : &description "PhD Candidate @ CSE from Michigan State University"   # Update this with a general description of your site, this is the default if not overridden by a page
