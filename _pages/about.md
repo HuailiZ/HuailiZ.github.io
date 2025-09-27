@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a Ph.D. candidate in Computer Science and Engineering (CSE) at Michigan State University, advised by Prof. [Tianxing Li](https://cse.msu.edu/~litianx2/). I hold an M.Sc. in Electrical and Computer Engineering (ECE) from the National University of Singapore (GPA **4.00/4.00**) and a B.E. with distinction from the University of Electronic Science and Technology of China (GPA **3.94/4.00**).
+I am a Ph.D. candidate in Computer Science and Engineering (CSE) at Michigan State University, advised by Prof. [Tianxing Li](https://cse.msu.edu/~litianx2/). I hold an M.Sc. in Electrical and Computer Engineering (ECE) from the National University of Singapore (GPA **4.00/4.00**), advised by Prof. [Cheng Xiang](https://cde.nus.edu.sg/ece/staff/xiang-cheng/) and a B.E. with distinction from the University of Electronic Science and Technology of China (GPA **3.94/4.00**), advised by Prof. [Changyuan Yu](https://www.eie.polyu.edu.hk/~cyuanyu/).
 
 My strengths come from dual training in **ECE** and **CSE**. I have deep knowledge of **signal processing**, **circuit design**, and **circuit analysis**, and I also work on **advanced model design**, including **generative models**, and large-scale system implementation. I am highly proficient in **MATLAB** and **Python**, and I use C/C++ for embedded and performance-critical components. I bridge theory and practice by moving between hardware-level analysis and software-level modeling and experimentation, and I build end-to-end systems with version control, testing, and reproducible workflows.
 
@@ -15,4 +15,4 @@ My research spans **digital health**, **human–computer interaction (HCI)**, **
 
 My work appears at top-tier conferences across multiple areas: **IMWUT**, **SenSys**, **MobiCom**, and OECC. I am seeking an internship that fits my research areas and strengths, where I can apply this mix of hardware insight, model design, and system building to deliver reliable, user-centered solutions.
 
-You can find my CV here: [Huaili's Curriculum Viate](../files/Huaili Zeng, PhD, MSU.pdf)
+You can find my CV here: [Huaili's Curriculum Viate](../files/Huaili Zeng, PhD, MSU.pdf). Interested? You can [mail](mailto:zenghuai@msu.edu) me.
