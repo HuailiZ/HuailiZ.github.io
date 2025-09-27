@@ -19,16 +19,15 @@ Education
   
 Skills
 ======
+* Signal Processing
+* Machine Learning
+* Generative Model Design
+* Python, MATLAB, C
 * Hardware
   * PCB Design
   * Circuit Simulation
   * 3D Modeling and Printing
   * Embedded Development
-* Signal Processing
-* Machine Learning
-* Generative Model Design
-* MATLAB
-* Python
 
 Publications
 ======
