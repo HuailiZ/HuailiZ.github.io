@@ -1,6 +1,6 @@
 ---
 layout: archive
-title: "CV"
+title: "Curriculum Vitae"
 permalink: /cv/
 author_profile: true
 redirect_from:
@@ -37,6 +37,14 @@ Publications
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
+
+Academic Services
+======
+* Program Committee of
+  * ACM SenSys Artifact Evaluation 2024
+  * IEEE International Conference on Parallel and Distributed Systems (ICPADS) 2024 - 2025
+* Journal Reviewer of
+  * IEEE Transactions on Mobile Computing (TMC) 2025
   
 Teaching
 ======
