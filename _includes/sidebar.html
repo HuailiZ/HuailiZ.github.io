@@ -1,7 +1,8 @@
 {% include base_path %}
+{% assign landing_collections = "teaching,publications,portfolio" | split: "," %}
 
 {% if page.author_profile or layout.author_profile or page.sidebar %}
-  <div class="sidebar sticky">
+  <div class="sidebar sticky{% if page.url == "/" %} sidebar--home{% endif %}{% if page.layout == 'archive' or landing_collections contains page.collection %} sidebar--landing{% endif %}">
   {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
   {% if page.sidebar %}
     {% for s in page.sidebar %}

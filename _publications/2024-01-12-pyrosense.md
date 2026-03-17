@@ -7,6 +7,7 @@ excerpt: 'PyroSense is a low-cost system that uses COTS passive infrared sensors
 date: 2024-01-12-pyrosense
 venue: 'Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)'
 paperurl: 'https://dl.acm.org/doi/pdf/10.1145/3631435'
+featured: true
 author:
   - "<strong>Huaili Zeng</strong>"
   - Gen Li

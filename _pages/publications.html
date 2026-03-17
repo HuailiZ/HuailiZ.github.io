@@ -3,20 +3,65 @@ layout: archive
 title: "Publications"
 permalink: /publications/
 author_profile: true
+excerpt: "Conference publications spanning digital health, sensing systems, wearables, and human-centered computing."
 ---
 
+<section class="archive-hero">
+  <p class="archive-hero__eyebrow">Research</p>
+  <h2 class="archive-hero__title">Publications across sensing, interactive systems, and wearable computing.</h2>
+  <p class="archive-hero__lead">
+    This page collects my conference publications, with selected first-author work featured on the homepage and CV.
+  </p>
+  <div class="archive-hero__actions">
+    <a class="btn" href="/cv/">View CV</a>
+    {% if site.author.googlescholar %}
+      <a class="btn btn--inverse" href="{{site.author.googlescholar}}">Google Scholar</a>
+    {% endif %}
+  </div>
+</section>
+
+<section class="archive-summary-grid">
+  <div class="archive-summary-card">
+    <strong>Primary areas</strong>
+    <p>Human-centered sensing, wearables, privacy-aware systems, digital health, and device interaction.</p>
+  </div>
+  <div class="archive-summary-card">
+    <strong>Publication venues</strong>
+    <p>IMWUT, SenSys, MobiCom, and OECC across computing, sensing, and systems research.</p>
+  </div>
+</section>
+
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <p class="archive-page-note">You can also browse the full list on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</p>
 {% endif %}
 
 {% include base_path %}
+{% assign publications_sorted = site.publications | sort: "date" | reverse %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
   {% for category in site.publication_category  %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
+    {% for post in publications_sorted %}
       {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% assign lead_author = post.author | first | default: "" | strip_html %}
+      {% unless lead_author contains "Huaili Zeng" %}
+        {% continue %}
+      {% endunless %}
+      {% unless title_shown %}
+        <h2>{{ category[1].title }}</h2><hr />
+        {% assign title_shown = true %}
+      {% endunless %}
+      {% include archive-single.html %}
+    {% endfor %}
+    {% for post in publications_sorted %}
+      {% if post.category != category[0] %}
+        {% continue %}
+      {% endif %}
+      {% assign lead_author = post.author | first | default: "" | strip_html %}
+      {% if lead_author contains "Huaili Zeng" %}
         {% continue %}
       {% endif %}
       {% unless title_shown %}
@@ -27,10 +72,18 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% for post in publications_sorted %}
+    {% assign lead_author = post.author | first | default: "" | strip_html %}
+    {% unless lead_author contains "Huaili Zeng" %}
+      {% continue %}
+    {% endunless %}
+    {% include archive-single.html %}
+  {% endfor %}
+  {% for post in publications_sorted %}
+    {% assign lead_author = post.author | first | default: "" | strip_html %}
+    {% if lead_author contains "Huaili Zeng" %}
+      {% continue %}
+    {% endif %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
-
-
-

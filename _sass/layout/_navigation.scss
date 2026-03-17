@@ -176,6 +176,8 @@
   position: relative;
   min-width: 250px;
   background: var(--global-bg-color);
+  display: flex;
+  justify-content: center;
 
   a {
     display: block;
@@ -203,10 +205,14 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
 
     li {
-      display: table-cell;
+      display: block;
       vertical-align: middle;
 
       &:first-child {
@@ -226,6 +232,8 @@
     }
 
     #theme-toggle {
+      margin-left: 0.25rem;
+
       a {
         width: 25px;
         display: flex;

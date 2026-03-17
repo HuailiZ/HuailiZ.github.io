@@ -7,6 +7,7 @@ excerpt: 'We propose a non-invasive, long-term vital signs monitoring system usi
 date: 2021-07-03
 venue: 'Optoelectronics and Communications Conference (OECC)'
 paperurl: 'https://drive.google.com/file/d/1oclOx2v0BvjU2nKgFwhilv3Sm7QeB6s5/view'
+featured: true
 author:
   - "<strong>Huaili Zeng</strong>"
   - Wei Xu

@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Huaili Zeng | Personal Website"
+title                    : "Huaili Zeng | Researcher and Builder"
 title_separator          : "-"
 name                     : &name "Huaili Zeng"
-description              : &description "PhD Candidate @ CSE from Michigan State University"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Ph.D. candidate studying human-centered sensing, user authentication, and privacy-aware systems for health and wearable settings."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://huailiz.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Huaili Zeng"
   pronouns         : # example: "she/her"  
-  bio              : "HCI | Digital Health | Machine Learning | User-based Research | Acoustic | Earable Sensing"
+  bio              : "Ph.D. candidate studying human-centered sensing, model design, and privacy-aware systems for health and wearable settings."
   location         : "East Lansing"
   employer         : "Michigan State University"
   uri              : # URL
