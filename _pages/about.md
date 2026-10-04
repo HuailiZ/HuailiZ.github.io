@@ -17,7 +17,7 @@ redirect_from:
     My work brings together HCI, signal processing, embedded systems, and data-driven modeling to design practical systems that support everyday use while protecting users and their privacy.
   </p>
   <div class="home-hero__actions">
-    <a class="btn btn--large" href="../files/Resume.pdf">Download Resume</a>
+    <a class="btn btn--large" href="{{ base_path }}/files/Resume.pdf">Download Resume</a>
     <a class="btn btn--inverse btn--large" href="/publications/">View Publications</a>
     <a class="btn btn--inverse btn--large" href="mailto:zenghuai@msu.edu">Contact Me</a>
   </div>

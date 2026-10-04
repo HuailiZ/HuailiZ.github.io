@@ -163,6 +163,8 @@ include:
   - _pages
   - files
 exclude:
+  # Keep the template talk map sources without publishing their sample locations.
+  - talkmap
   - "*.sublime-project"
   - "*.sublime-workspace"
   - .asset-cache

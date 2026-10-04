@@ -6,6 +6,7 @@ author_profile: true
 excerpt: "Quick overview of Huaili Zeng's education, research strengths, selected publications, and academic service."
 redirect_from:
   - /resume
+  - /resume-json
 ---
 
 {% include base_path %}
@@ -17,7 +18,7 @@ redirect_from:
     This page highlights the core parts of my CV. You can also download the full PDF for a more detailed version.
   </p>
   <div class="archive-hero__actions">
-    <a class="btn" href="../files/Resume.pdf">Download Resume</a>
+    <a class="btn" href="{{ base_path }}/files/Resume.pdf">Download Resume</a>
     <a class="btn btn--inverse" href="{{ base_path }}/publications/">View Publications</a>
   </div>
 </section>
