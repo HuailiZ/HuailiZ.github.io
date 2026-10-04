@@ -11,8 +11,9 @@ redirect_from:
 {% include base_path %}
 
 <section class="home-hero">
+  <img class="home-hero__portrait" src="{{ base_path }}/images/profile.png" alt="Huaili Zeng" width="88" height="88">
   <p class="home-hero__eyebrow">Huaili Zeng</p>
-  <h1 class="home-hero__title">From sensor signals to real-world perception.</h1>
+  <h1 class="home-hero__title">From sensor signals<br>to <em>real-world perception.</em></h1>
   <p class="home-hero__lead">
     I am a Ph.D. candidate in Computer Science and Engineering at Michigan State University, advised by
     <a href="https://cse.msu.edu/~litianx2/">Prof. Tianxing Li</a>.
