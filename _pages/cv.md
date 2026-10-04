@@ -13,7 +13,7 @@ redirect_from:
 
 <section class="archive-hero">
   <p class="archive-hero__eyebrow">Overview</p>
-  <h2 class="archive-hero__title">A quick view of my education, research strengths, and academic work.</h2>
+  <h2 class="archive-hero__title">Machine learning, sensor signal processing, and real-world sensing systems.</h2>
   <p class="archive-hero__lead">
     This page highlights the core parts of my CV. You can also download the full PDF for a more detailed version.
   </p>
@@ -26,18 +26,18 @@ redirect_from:
 <section class="archive-summary-grid">
   <div class="archive-summary-card">
     <strong>Research focus</strong>
-    <p>Human-centered sensing, privacy-aware systems, user authentication, and wearable computing.</p>
+    <p>Multimodal perception, physiological sensing, wearable authentication, and efficient on-device systems.</p>
   </div>
   <div class="archive-summary-card">
     <strong>Technical strengths</strong>
-    <p>Signal processing, model development, prototyping, evaluation, and practical system implementation.</p>
+    <p>End-to-end pipelines from raw sensor data to signal enhancement, modeling, inference, and experimental validation.</p>
   </div>
 </section>
 
 <section class="cv-section-card">
   <h2>Education</h2>
   <ul class="cv-simple-list">
-    <li>Ph.D. in Computer Science and Engineering, Michigan State University</li>
+    <li>Ph.D. candidate in Computer Science and Engineering, Michigan State University, 2022–present (expected 2027)</li>
     <li>M.Sc. in Electrical and Computer Engineering, National University of Singapore, 2022</li>
     <li>B.E. in Electronics and Information Engineering, University of Electronic Science and Technology of China, 2021</li>
   </ul>
@@ -46,10 +46,21 @@ redirect_from:
 <section class="cv-section-card">
   <h2>Research and Technical Strengths</h2>
   <ul class="cv-simple-list">
-    <li>Human-centered sensing, user authentication, privacy-aware systems, and wearable computing</li>
-    <li>Signal processing, model development, system prototyping, and user-focused evaluation</li>
-    <li>Python, MATLAB, C/C++, embedded development, circuit analysis, and reproducible experimentation</li>
+    <li>Acoustic, infrared, physiological, and piezoelectric sensing; multimodal modeling and secure wearable interaction</li>
+    <li>Filtering, denoising, time-series analysis, feature extraction, CNN/LSTM models, generative modeling, and system evaluation</li>
+    <li>Python, MATLAB, C/C++, PyTorch, OpenCV, Linux, Git, and mobile/wearable hardware-software prototyping</li>
   </ul>
+</section>
+
+<section class="cv-section-card">
+  <h2>Selected Research Projects</h2>
+  <ul class="cv-simple-list">
+    <li><strong>Commercial-earphone perception:</strong> adaptive signal processing and lightweight CNNs for facial expressions, gestures, and silent speech, with an always-on mobile inference pipeline. Ongoing research.</li>
+    <li><strong>PiezoBud:</strong> multimodal sensing and generative modeling for speaker authentication with a piezoelectric hardware-software prototype.</li>
+    <li><strong>PyroSense:</strong> CNN-LSTM modeling of sparse PIR signals for 3D human pose reconstruction.</li>
+    <li><strong>Optical-fiber physiological sensing:</strong> signal processing, hierarchical clustering, and template matching for non-invasive beat-to-beat heart-rate estimation.</li>
+  </ul>
+  <p class="archive-page-note"><a href="{{ base_path }}/#selected-projects">See the project overview</a> and the publications below for further details.</p>
 </section>
 
 <section class="cv-section-card">

@@ -2,19 +2,21 @@
 permalink: /
 title: ""
 author_profile: true
-excerpt: "Huaili Zeng is a Ph.D. candidate at Michigan State University studying human-centered sensing, user authentication, and privacy-aware systems."
+excerpt: "Huaili Zeng is a Ph.D. candidate at Michigan State University working on machine learning, sensor signal processing, and real-world perception systems."
 redirect_from: 
   - /about/
   - /about.html
 ---
 
+{% include base_path %}
+
 <section class="home-hero">
   <p class="home-hero__eyebrow">Huaili Zeng</p>
-  <h1 class="home-hero__title">Toward privacy protection in user-centered daily life.</h1>
+  <h1 class="home-hero__title">From sensor signals to real-world perception.</h1>
   <p class="home-hero__lead">
     I am a Ph.D. candidate in Computer Science and Engineering at Michigan State University, advised by
     <a href="https://cse.msu.edu/~litianx2/">Prof. Tianxing Li</a>.
-    My work brings together HCI, signal processing, embedded systems, and data-driven modeling to design practical systems that support everyday use while protecting users and their privacy.
+    I develop signal-processing and machine-learning methods for noisy, real-world sensor data, spanning acoustic, infrared, physiological, and piezoelectric sensing. My work connects raw signal acquisition and multimodal modeling with efficient inference on mobile and wearable devices, with applications in human perception, health monitoring, and secure interaction.
   </p>
   <div class="home-hero__actions">
     <a class="btn btn--large" href="{{ base_path }}/files/Resume.pdf">Download Resume</a>
@@ -24,43 +26,37 @@ redirect_from:
 </section>
 
 <section class="home-section">
-  <h2>What I work on</h2>
-  <div class="home-pillars">
-    <div class="home-card">
-      <h3>HCI and Everyday Use</h3>
-      <p>I study interactive and user-centered scenarios where sensing systems need to work naturally in daily life.</p>
-    </div>
-    <div class="home-card">
-      <h3>Privacy and Device Protection</h3>
-      <p>I study ways to protect user privacy by improving device protection while keeping everyday interactions natural and usable.</p>
-    </div>
-    <div class="home-card">
-      <h3>Sensing and Modeling</h3>
-      <p>I work across sensing, modeling, and evaluation to develop systems that are reliable, practical, and grounded in real use.</p>
-    </div>
+  <h2 id="selected-projects">Selected projects</h2>
+  <div class="home-highlights">
+    <article class="home-card">
+      <p class="home-publication__meta">Commercial earphones · Ongoing research</p>
+      <h3>Real-world human perception</h3>
+      <p>Software-only sensing with unmodified commercial earphones for facial expressions, hand gestures, and silent speech. I combine adaptive gain control and lightweight CNNs in an always-on mobile sensing and inference pipeline.</p>
+    </article>
+    <article class="home-card">
+      <p class="home-publication__meta">PiezoBud · ACM SenSys 2024</p>
+      <h3>Multimodal speaker authentication</h3>
+      <p>A hardware-software prototype combining piezoelectric sensing and acoustic signals with flow-based generative modeling for speaker authentication and spoofing resilience on resource-constrained mobile hardware.</p>
+      <a href="{{ base_path }}/publication/2024-11-14-piezobud">Paper and project details</a>
+    </article>
+    <article class="home-card">
+      <p class="home-publication__meta">PyroSense · ACM IMWUT 2024</p>
+      <h3>3D pose from infrared signals</h3>
+      <p>CNN-LSTM modeling of sparse temporal signals from commodity PIR sensors to reconstruct human joint coordinates. The published system reports over 99% activity classification accuracy and mean joint error below 16 cm.</p>
+      <a href="{{ base_path }}/publication/2024-01-12-pyrosense">Paper and project details</a>
+    </article>
+    <article class="home-card">
+      <p class="home-publication__meta">Optical-fiber sensing · OECC 2021</p>
+      <h3>Non-invasive physiological sensing</h3>
+      <p>Signal processing for weak ballistocardiography and respiration signals from optical-fiber sensors. Hierarchical clustering and template matching support beat-to-beat heart-rate estimation without wearable electrodes.</p>
+      <a href="{{ base_path }}/publication/2021-07-03-mzi">Paper and project details</a>
+    </article>
   </div>
 </section>
 
 <section class="home-section">
-  <h2>Highlights</h2>
-  <div class="home-highlights">
-    <div class="home-highlight">
-      <strong>Active publication record</strong>
-      <p>Publications in venues including IMWUT, SenSys, MobiCom, and OECC across sensing, interactive systems, and computing research.</p>
-    </div>
-    <div class="home-highlight">
-      <strong>Applied evaluation experience</strong>
-      <p>Experience designing studies and evaluating user-centered systems across varied real-world conditions.</p>
-    </div>
-    <div class="home-highlight">
-      <strong>Broad technical foundation</strong>
-      <p>Background in signal processing, model design, prototyping, evaluation workflows, and reproducible experimentation.</p>
-    </div>
-    <div class="home-highlight">
-      <strong>Cross-disciplinary training</strong>
-      <p>Dual training in ECE and CSE, with experience moving between hardware-level constraints and software-level system design.</p>
-    </div>
-  </div>
+  <h2>How I build sensing systems</h2>
+  <p>I work across signal acquisition, preprocessing and enhancement, feature extraction, model development, and experimental validation. My tools include Python, MATLAB, C/C++, and PyTorch, alongside hands-on mobile and wearable prototyping.</p>
 </section>
 
 <section class="home-section">
@@ -87,6 +83,6 @@ redirect_from:
     Across these roles, I have built expertise in signal processing, model development, circuit analysis, and system implementation using Python, MATLAB, and C/C++.
   </p>
   <p>
-    I am interested in opportunities related to HCI, user-centered sensing, authentication, privacy, and wearable computing.
+    I am interested in research and engineering opportunities in machine learning, perception, sensor signal processing, and efficient on-device systems, including applications in embodied AI.
   </p>
 </section>
