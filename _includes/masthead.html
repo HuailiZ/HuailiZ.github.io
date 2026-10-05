@@ -4,7 +4,8 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <button aria-label="Toggle navigation"><div class="navicon"></div></button>
+        <span class="nav-selection" aria-hidden="true"></span>
+        <button class="hidden" aria-label="Toggle navigation"><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/"><span class="brand-full">{{ site.title }}</span><span class="brand-short">{{ site.name }}</span></a></li>
           {% for link in site.data.navigation.main %}
@@ -13,7 +14,11 @@
             {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            {% assign nav_current = false %}
+            {% if page.url == link.url %}{% assign nav_current = true %}{% endif %}
+            {% if page.collection == 'publications' and link.url == '/publications/' %}{% assign nav_current = true %}{% endif %}
+            {% if page.collection == 'teaching' and link.url == '/teaching/' %}{% assign nav_current = true %}{% endif %}
+            <li class="masthead__menu-item"><a data-nav-link href="{{ domain }}{{ link.url }}"{% if nav_current %} aria-current="page"{% endif %}>{{ link.title }}</a></li>
           {% endfor %}
           <li id="theme-toggle" class="masthead__menu-item persist tail">
             <a role="button" tabindex="0" aria-label="Toggle color theme" onkeydown="if(event.key === 'Enter' || event.key === ' '){event.preventDefault();this.click();}"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>

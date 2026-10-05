@@ -13,6 +13,16 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Resolve the saved/system theme before loading CSS or painting the page.
+  (function () {
+    var theme;
+    try { theme = localStorage.getItem('theme'); } catch (_) {}
+    if (theme !== 'dark' && theme !== 'light') {
+      theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    if (theme === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    else document.documentElement.removeAttribute('data-theme');
+  })();
 </script>
 
 <!-- For all browsers -->

@@ -1,0 +1,56 @@
+/* Resolve theme before paint and remove the template's delayed reveal. */
+#main, .page__hero, .page__hero--overlay { animation: none; }
+html { color-scheme: light; background: var(--global-bg-color); }
+html[data-theme="dark"] { color-scheme: dark; }
+
+/* Match the existing priority navigation's settled spacing before it runs. */
+body { padding-top: 56px; }
+@media (min-width: 925px) { .sidebar { padding-top: 56px; } }
+@media (max-width: 767px) { body { padding-top: 58px; } }
+
+/* Reserve the existing square portrait before its image bytes arrive. */
+.sidebar .author__avatar img { width: 100%; aspect-ratio: 1; object-fit: cover; }
+@media (max-width: 767px) {
+  .js .greedy-nav .visible-links > .masthead__menu-item:not(.persist) { display: none; }
+}
+
+/* A soft selection background, with no decorative border or solid ring. */
+:root { --nav-glass-fill: rgba(89, 151, 227, .14); }
+html[data-theme="dark"] { --nav-glass-fill: rgba(145, 189, 235, .16); }
+.greedy-nav [data-nav-link] { border-radius: 999px; position: relative; z-index: 1; transition: color .15s; }
+.greedy-nav [data-nav-link][aria-current="page"] { background: var(--nav-glass-fill); }
+.greedy-nav.nav-has-selection .visible-links [data-nav-link][aria-current="page"] { background: transparent; }
+.greedy-nav [data-nav-link]:focus:not(:focus-visible) { outline: none; }
+.nav-selection {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  border: 0;
+  border-radius: 999px;
+  background: var(--nav-glass-fill);
+  box-shadow: none;
+  z-index: 0;
+  transition: none;
+}
+.nav-has-selection .nav-selection { opacity: 1; }
+.nav-selection-ready .nav-selection { transition: transform .24s cubic-bezier(.22,.8,.25,1), width .24s cubic-bezier(.22,.8,.25,1); }
+.greedy-nav .hidden-links [data-nav-link] { padding-left: .8rem; padding-right: .8rem; }
+
+/* Change theme colors together, rather than tweening text against a new panel. */
+html.theme-changing *, html.theme-changing *::before, html.theme-changing *::after { transition: none !important; }
+
+/* Keep document rendering native. Only the live navigation background moves. */
+@view-transition { navigation: none; }
+@media (prefers-reduced-motion: reduce) {
+  .nav-selection-ready .nav-selection { transition: none; }
+}
+@media (forced-colors: active) {
+  .nav-selection { background: Canvas; }
+  .greedy-nav [aria-current="page"] { outline: 1px solid Highlight; }
+}
+/* Keep every native navigation link reachable when JavaScript is disabled. */
+.no-js .greedy-nav > button, .no-js #theme-toggle { display: none; }
+.no-js .greedy-nav .visible-links { flex-wrap: wrap; width: auto !important; margin-right: 0 !important; }
+.no-js .masthead { position: static; }
